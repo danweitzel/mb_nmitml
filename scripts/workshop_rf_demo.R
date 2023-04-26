@@ -276,21 +276,6 @@ ggarrange(fig_pred1, fig_pred2,
 
 ## Next visualize the predictions in the test set vs the observed values for 
 ## select countries using a line graph
-df_combined %>%
-  filter(country_name %in% c("United Kingdom", "United States", "Germany",
-                        "France", "Russia", "Austria",
-                        "Mexico", "Brazil", "Argentina")) |>
-  filter(year > 2011) |>
-  ggplot(aes(x = year, y = v2x_libdem)) +
-  geom_point(size=0.4, color = "gray26") +
-  geom_point(aes(y = preds_value), size=0.4, color = "red") +
-  theme_minimal() + ylim(0,1) +
-  facet_wrap(~country_name) +
-  labs(title = "Preliminary predictions for 2011-2018",
-       y = "FH combined", x = "Year",
-       caption = "Black: observed, red: predicted")
-
-
 df_combined |>
   filter(country_name %in% c("United States of America", "Germany",
                              "France", "Russia", "Austria", "Colombia",
