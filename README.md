@@ -1,4 +1,4 @@
-# CSU Methods Bites: Intro to ML Workshop
+# CSU Methods Bites: Intro to ML for Social Scientists Workshop
 
 This repository holds the code and slides for the non-mathematical introduction to machine learning for social scientists workshop in the CSU Methods Bites series. 
 
