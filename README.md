@@ -15,5 +15,4 @@ devtools::install_github("vdeminstitute/vdemdata", force = TRUE)
 ## Installing the tidyverse, h2o, randomizr, naniar, and ggpubr from CRAN:
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(tidyverse, h2o, randomizr, naniar, ggpubr)
- 
 ```
